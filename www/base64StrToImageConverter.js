@@ -18,8 +18,17 @@
  */
 
 
-// base 64 to image converter
-function base64StrToImageConverter(successHandler, errorHandler, base64data, fileType, fileName, fileLocation)
-{
-    cordova.exec(successHandler, errorHandler, "NewsStandDemo", "saveImage", [base64data, fileType, fileName, fileLocation]);
+var base64StrToImageConverter = {
+    saveImage: function(successHandler, errorHandler, base64data, fileType, fileName, fileLocation) {
+    cordova.exec(successHandler, errorHandler, "SaveImage", "saveImage", [base64data, fileType, fileName, fileLocation]);
+    }
 }
+module.exports = base64StrToImageConverter;
+
+
+// base 64 to image converter
+//function base64StrToImageConverter(successHandler, errorHandler, base64data, fileType, fileName, fileLocation)
+//{
+  //  cordova.exec(successHandler, errorHandler, "SaveImage", "saveImage", [base64data, fileType, fileName, fileLocation]);
+//}
+

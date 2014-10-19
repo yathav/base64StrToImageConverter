@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-           id="com.example.plugin"
+           id="com.example.base64StrToImageConverter"
       version="0.1.0">
     <name>SaveImage</name>
     <description>Sample PhoneGap SaveImage Plugin</description>
@@ -9,8 +9,8 @@
     <keywords>phonegap,save image</keywords>
 
 
-    <js-module src="www/saveImage.js" name="saveImage">
-        <clobbers target="window.saveImage" />
+    <js-module src="www/base64StrToImageConverter.js" name="base64StrToImageConverter">
+        <clobbers target="window.base64StrToImageConverter" />
     </js-module>
 
     <!-- android -->
@@ -24,3 +24,4 @@
         <source-file src="src/android/SaveImage.java" target-dir="src/com/example/plugin" />      
      </platform>          
 </plugin>
+
