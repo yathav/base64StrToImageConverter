@@ -28,7 +28,7 @@ public class SaveImage extends CordovaPlugin{
 		try {
 			if(!dirPath.exists()){
 				
-				dirPath.mkdir();
+				dirPath.mkdirs();
 				
 			}
 			

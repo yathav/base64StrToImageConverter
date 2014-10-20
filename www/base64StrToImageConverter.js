@@ -18,10 +18,8 @@
  */
 
 
-var base64StrToImageConverter = {
-    saveImage: function(successHandler, errorHandler, base64data, fileType, fileName, fileLocation) {
+var base64StrToImageConverter = function(successHandler, errorHandler, base64data, fileType, fileName, fileLocation) {
     cordova.exec(successHandler, errorHandler, "SaveImage", "saveImage", [base64data, fileType, fileName, fileLocation]);
-    }
 }
 module.exports = base64StrToImageConverter;
 
